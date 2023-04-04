@@ -13,7 +13,7 @@ export class AppComponent {
 
   }
   randomCatFact(){
-    const url ='https://catfact.ninja/fact';
+    const url ='https://localhost:7166/cat';
     
     const headers = new HttpHeaders({
       'Access-Control-Allow-Origin': '*',
@@ -25,7 +25,7 @@ export class AppComponent {
         fact: response.fact,
         length: response.length
       }
-      console.log(this.content)
+
     });
 
 
